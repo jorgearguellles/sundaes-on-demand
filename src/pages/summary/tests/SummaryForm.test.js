@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react"; // render the components, screen allows us find elements and fireEvent simulated user interactive
 import { SummaryForm } from "../SummaryForm";
+import userEvent from "@testing-library/user-event";
 
 describe("Testing <SummaryForm />", () => {
   test("1. Initial conditions", () => {
@@ -30,4 +31,6 @@ describe("Testing <SummaryForm />", () => {
     fireEvent.click(checkbox);
     expect(confirmButton).toBeDisabled();
   });
+
+  test("3. ", () => {});
 });
