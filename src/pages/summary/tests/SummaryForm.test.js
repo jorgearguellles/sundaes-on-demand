@@ -32,5 +32,12 @@ describe("Testing <SummaryForm />", () => {
     expect(confirmButton).toBeDisabled();
   });
 
-  test("3. ", () => {});
+  test("3. Popover responds to hover", () => {
+    render(<SummaryForm />);
+    //popover starts out hidden
+
+    //popover appears upon mouseover of checkbox label
+
+    //popover disappear when we mouse out
+  });
 });
